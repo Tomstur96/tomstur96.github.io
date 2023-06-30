@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Burrito Man</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/Hardcode HTML Test/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="content">
+      <div class="container flex--col">
+        <a class="logo"
+          ><h1 class="logo--title">Burrito Man</h1>
+          <img
+        /></a>
+        <nav class="nav">
+          <ul class="nav--list primary--list flex--row">
+            <li class="nav--item active"><a id="Home--link">Home</a></li>
+            <li class="nav--item"><a id="Menu--link">Menu</a></li>
+            <li class="nav--item"><a id="ContactUs--link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="pageTabContent">
+      <div class="contactUs--content flex--col" id="contactUsTab">
+        <div class="contactUs--heading">
+          <h1 class="contactUs--title">Contact Us</h1>
+          <p class="para--contactUs">Fill in the form below and we'll get back to you as soon as we can!</p>
+        </div>
+
+        <div class="contactUsForm">
+
+          <form name="formInput" class="form--input flex--col" id="form--input">
+
+            <div class="resturantEnquiry--content flex--col">
+              
+              <div class="resturantSelection--wrapper flex--col">
+                <label for="resturant--name" class="resturantName">Which restaurant does your feedback relate</label>
+                <select name="resturants--name" id="resturants--name">
+                  <option value="Select-Restaurant" selected>Select Restaurant</option>
+                  <option value="Sydney">Sydney</option>
+                  <option value="Melbourne">Melbourne</option>
+                  <option value="Brisbane">Brisbane</option>
+                </select>
+              </div>
+
+              <div class="typeofEnquiry--content flex--col">
+                <label for="feedback--category">Feedback category</label>
+                <select name="feedback--category" id="feedback--category">
+                  <option value="Select Category" selected>Select Category</option>
+                  <option value="Guest Services">Guest Services</option>
+                  <option value="Food Product">Food Product</option>
+                  <option value="Marketing & Media">Marketing & Media</option>
+                  <option value="General">General</option>
+                </select>
+              </div>
+            </div>
+            <div class="clientContactInfo--content">
+              <div class="nameInfo--wrapper flex--row">
+                <div class="firstName--container flex--col">
+                  <label for="f-name">First name:</label>
+                  <input type="text" name="f-name" id="f-name">
+                </div>
+                <div class="lastName--container flex--col">
+                  <label for="l-name">Last name:</label>
+                  <input type="text" name="l-name" id="l-name">
+                </div>
+              </div>
+              <div class="clientNumber flex--col">
+                <label for="phoneNumb">Contact phone number:</label>
+                <input type="tel" name="phoneNumb" id="phoneNumb">
+              </div>
+              <div class="clientEmail flex--col">
+                <label for="clientEmail">Your email (required)</label>
+                <input type="email" name="clientEmail" id="clientEmail" required>
+              </div>
+            </div>
+            <div class="clientMessage--content flex--col">
+              <label for="clientMessage">Your Message:</label>
+              <textarea placeholder="Please add your feedback here..." name="clientMessage" id="clientMessage" cols="30" rows="10"></textarea>
+            </div>
+            <div class="submitForm">
+              <input type="submit" value="Submit Feedback" class="submitBtn" id="submitBtn">
+            </div>
+            </form>
+
+            <div class="resturantInfo--content">
+              <div class="resturantInfo--wrapper flex--row">
+
+                <div class="resturantAddress--content flex--col">
+                  <div class="resturantInfo--address">
+                    <img src="" alt="">
+                    <div class="address--wrapper flex--col">
+                      <span class="street">35 Holdsworth Street</span>
+                      <span class="suburbStateCode">Neutral Bay, NSW, 2089</span>
+                    </div>
+                  </div>
+                  <div class="resturantInfo--hours">
+                    <img src="" alt="">
+                    <div class="hours--wrapper flex--col">
+                      <span class="monFriHrs">Monday-Friday: 0800 - 1700</span>
+                      <span class="satSunHrs">Saturday-Sunday: 1000 - 1600</span>
+                    </div>
+                  </div>
+                  <div class="resturantInfo--number flex--row">
+                    <img src="" alt="">
+                    <span class="number">02 9960 4199</span>
+                  </div>
+                </div>
+
+                <div class="resutrantIframe">
+                  <iframe class="addressMap" id="addressMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.063542826736!2d151.2151367!3d-33.83647190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae93cf09495b%3A0xeb20b993ab0cbc4e!2s35%20Holdsworth%20St%2C%20Neutral%20Bay%20NSW%202089!5e0!3m2!1sen!2sau!4v1687753752403!5m2!1sen!2sau" frameborder="0" scrolling="no" marginHeight="0" marginWidth="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- <div class="menu--content grid-col" id="menuTabContent">
+        <div class="grid--wrapper" id="grid--wrapper">
+          <div data-index="0" class="menu--itemContent flex--col bottomBorder">
+            <div class="imgWrapper flex--col">
+              <img src="assets/images/menu--item_1.jpg" class="menu--itemImg" />
+            </div>
+            <h3 class="menu--itemTitle">Spaghetti Bolognese</h3>
+            <span class="menu--itemDesc"
+              >A classic Italian dish consisting of spaghetti pasta topped with
+              a rich, meaty tomato sauce.</span
+            >
+            <div class="menu--itemPrice flex--row">
+              <p class="menu--itemPricing">Price:$25</p>
+              <button class="menu--itemCart" data-item="menu--item_0">
+                🛒
+              </button>
+            </div>
+          </div>
+          <div data-index="1" class="menu--itemContent flex--col bottomBorder">
+            <div class="imgWrapper flex--col">
+              <img src="assets/images/menu--item_2.jpg" class="menu--itemImg" />
+            </div>
+            <h3 class="menu--itemTitle">Supreme Pizza</h3>
+            <span class="menu--itemDesc"
+              >A flavorful and loaded combination of various toppings including
+              pepperoni, sausage, vegetables, and cheese on a delicious pizza
+              crust.</span
+            >
+            <div class="menu--itemPrice flex--row">
+              <p class="menu--itemPricing">Price:$20</p>
+              <button class="menu--itemCart" data-item="menu--item_1">
+                🛒
+              </button>
+            </div>
+          </div>
+          <div data-index="2" class="menu--itemContent flex--col">
+            <div class="imgWrapper flex--col">
+              <img src="assets/images/menu--item_3.jpg" class="menu--itemImg" />
+            </div>
+            <h3 class="menu--itemTitle">Calzone Hawaiian Pizza</h3>
+            <span class="menu--itemDesc"
+              >A savory and folded pizza filled with ham, pineapple, cheese, and
+              tomato sauce, providing a delicious twist on the classic Hawaiian
+              pizza flavors.</span
+            >
+            <div class="menu--itemPrice flex--row">
+              <p class="menu--itemPricing">Price:$22.5</p>
+              <button class="menu--itemCart" data-item="menu--item_2">
+                🛒
+              </button>
+            </div>
+          </div>
+          <div data-index="3" class="menu--itemContent flex--col">
+            <div class="imgWrapper flex--col">
+              <img
+                src="assets/images/menu--item_4.jpg"
+                class="menu--itemImg rotated"
+              />
+            </div>
+            <h3 class="menu--itemTitle">Italian Meat &amp; Cheese Platter</h3>
+            <span class="menu--itemDesc"
+              >A delectable assortment of cured Italian meats such as salami,
+              prosciutto, and capocollo, paired with a selection of flavorful
+              cheeses like mozzarella, provolone, and aged Parmesan.</span
+            >
+            <div class="menu--itemPrice flex--row">
+              <p class="menu--itemPricing">Price:$35</p>
+              <button class="menu--itemCart" data-item="menu--item_3">
+                🛒
+              </button>
+            </div>
+          </div>
+          <div data-index="4" class="menu--itemContent flex--col">
+            <div class="imgWrapper flex--col">
+              <img src="assets/images/menu--item_5.jpg" class="menu--itemImg" />
+            </div>
+            <h3 class="menu--itemTitle">Vanilla Bean Gelato</h3>
+            <span class="menu--itemDesc"
+              >A creamy and smooth frozen dessert bursting with the exquisite
+              flavors of real vanilla beans, offering a delightful and indulgent
+              treat for the taste buds.</span
+            >
+            <div class="menu--itemPrice flex--row">
+              <p class="menu--itemPricing">Price:$6.5</p>
+              <button class="menu--itemCart" data-item="menu--item_4">
+                🛒
+              </button>
+            </div>
+          </div>
+          <div data-index="5" class="menu--itemContent flex--col">
+            <div class="imgWrapper flex--col">
+              <img src="assets/images/menu--item_6.jpg" class="menu--itemImg" />
+            </div>
+            <h3 class="menu--itemTitle">Home-made Tiramisu</h3>
+            <span class="menu--itemDesc"
+              >An exquisite Italian dessert consisting of layers of delicate
+              ladyfinger biscuits soaked in espresso and liqueur, generously
+              layered with creamy mascarpone cheese filling, and dusted with
+              rich cocoa powder.</span
+            >
+            <div class="menu--itemPrice flex--row">
+              <p class="menu--itemPricing">Price:$8.5</p>
+              <button class="menu--itemCart" data-item="menu--item_5">
+                🛒
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="home--content flex--col" id="homeTabContent">
+        <h2 class="home--title">Welcome to BurritoMan!</h2>
+        <p class="home--para">
+          Experience the tantalizing flavors of authentic Mexican cuisine at
+          BurritoMan, where we take pride in crafting mouthwatering burritos
+          that will leave you craving for more. With a fusion of traditional
+          recipes and innovative culinary techniques, our chefs create a
+          symphony of flavors that will transport your taste buds to the streets
+          of Mexico.
+        </p>
+        <h2 class="home--sub-title">Order online now!</h2>
+        <p class="home--para">
+          Can't wait to dig into our scrumptious offerings? Order online and
+          have your favorite burritos and Mexican delicacies delivered right to
+          your doorstep. We make it convenient for you to satisfy your cravings
+          whenever and wherever you are. Join the BurritoMan community and
+          embark on a culinary journey that will awaken your taste buds. Come
+          and experience the magic of Mexico at BurritoMan today!
+        </p>
+      </div> -->
+    </div>
+
+  </body>
+</html>
